@@ -1,0 +1,35 @@
+name: PunishPlugin
+version: 1.0.0
+main: de.yourserver.punish.PunishPlugin
+api-version: '1.20'
+description: Punish, Ban, Freeze, Lookup Plugin
+commands:
+  punish:
+    description: Bestrafung hinzufügen
+    usage: /punish <Spieler> <Grund>
+    permission: punish.use
+  unban:
+    description: Bestrafung aufheben
+    usage: /unban <Spieler>
+    permission: punish.unban
+  lookup:
+    description: Bestrafungen anzeigen
+    usage: /lookup <all|alt> <Spieler>
+    permission: punish.lookup
+  frezz:
+    description: Spieler einfrieren
+    usage: /frezz <Spieler>
+    permission: punish.freeze
+permissions:
+  punish.use:
+    default: op
+  punish.unban:
+    default: op
+  punish.lookup:
+    default: op
+  punish.freeze:
+    default: op
+  punish.security:
+    default: op
+  punish.dev:
+    default: op
